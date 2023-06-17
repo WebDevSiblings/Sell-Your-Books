@@ -27,6 +27,7 @@ export function Chart() {
       }}
     >
       <Pie data={data} />
+      <h3>95% of our users love Sell Your Books!</h3>
     </div>
   );
 }
