@@ -1,3 +1,4 @@
+import { Chart } from "./Chart";
 import IconText from "./IconText";
 import NavBar from "./NavBar";
 
@@ -6,6 +7,7 @@ const Welcome = () => {
     <>
       <NavBar />
       <IconText />
+      <Chart />
     </>
   );
 };
