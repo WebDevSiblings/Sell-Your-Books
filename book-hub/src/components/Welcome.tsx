@@ -5,7 +5,18 @@ const Welcome = () => {
   return (
     <>
       <NavBar />
-      <Chart />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h1 className="ms-3" style={{ fontSize: "10rem" }}>
+          Welcome!
+        </h1>
+        <Chart />
+      </div>
     </>
   );
 };
