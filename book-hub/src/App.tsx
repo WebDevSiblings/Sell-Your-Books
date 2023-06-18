@@ -1,9 +1,8 @@
 import "./App.css";
-import NavBar from "./components/NavBar";
-import Welcome from "./components/Welcome";
+import SignupPage from "./components/SignupPage";
 
 function App() {
-  return <Welcome />;
+  return <SignupPage />;
 }
 
 export default App;
