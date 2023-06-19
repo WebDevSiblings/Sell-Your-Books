@@ -1,24 +1,51 @@
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import Toolbar from "@mui/material/Toolbar";
 import { NavLink } from "react-router-dom";
+import { useTheme } from "@mui/material/styles";
 
 const NavBar = () => {
+  const theme = useTheme();
+
   return (
-    <nav className="navbar navbar-light bg-light">
-      <NavLink to="/">
-        <img
-          src="/src/images/logo.png"
-          width="90"
-          height="90"
-          className="d-inline-block align-top ms-3"
-          alt="Logo"
-        />
-      </NavLink>
-      <NavLink to="/login" className="navbar-brand">
-        Log in
-      </NavLink>
-      <NavLink to="/signup" className="navbar-brand ml-3">
-        Sign up
-      </NavLink>
-    </nav>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar
+        position="static"
+        sx={{ backgroundColor: theme.palette.warning.main }}
+      >
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <NavLink to="/">
+                <img
+                  alt="Logo"
+                  className="logo"
+                  src="/src/assets/logo.png"
+                  style={{ height: 74.2529358627 }}
+                />
+              </NavLink>
+            </IconButton>
+          </Box>
+
+          <Box>
+            <NavLink to="/login" className="navbar-brand">
+              <Button color="inherit">Login</Button>
+            </NavLink>
+            <NavLink to="/signup" className="navbar-brand">
+              <Button color="inherit">Signup</Button>
+            </NavLink>
+          </Box>
+        </Toolbar>
+      </AppBar>
+    </Box>
   );
 };
 
