@@ -1,19 +1,10 @@
 
-/*Place the NavBar component on the top of the page*/
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-}
-/*Control the color of the NavBar*/
-.colorControl {
-  background-color: #b1f2bc;
-  border-radius: 10px;
-}
-/*COntrol the header in the welcome page*/
+/*Control the header in the welcome page*/
 .large-header{
   font-size: 100px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+/*Fix logo shape*/
+.logo{
+  border-radius: 100rem;
 }
