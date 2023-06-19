@@ -29,7 +29,7 @@ const NavBar = () => {
                   alt="Logo"
                   className="logo"
                   src="/src/assets/logo.png"
-                  style={{ width: 80, height: 60 }}
+                  style={{ height: 74.2529358627 }}
                 />
               </NavLink>
             </IconButton>

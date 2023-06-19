@@ -1,10 +1,14 @@
-
-/*Control the header in the welcome page*/
-.large-header{
-  font-size: 100px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+.header {
+  display: inline-block;
+  border-radius: 15px;
+  opacity: 0.85;
+}
+.description {
+  display: inline-block;
+  border-radius: 15px;
+  opacity: 0.85;
 }
 /*Fix logo shape*/
 .logo{
-  border-radius: 100rem;
+  border-radius: 10rem;
 }
