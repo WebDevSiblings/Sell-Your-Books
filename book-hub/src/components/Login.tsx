@@ -9,7 +9,7 @@ import * as React from "react";
 
 const defaultTheme = createTheme();
 
-export default function SignIn() {
+export default function LogIn() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -32,7 +32,7 @@ export default function SignIn() {
           }}
         >
           <Typography component="h1" variant="h5">
-            Log in
+            Log In
           </Typography>
           <Box
             component="form"
@@ -64,9 +64,16 @@ export default function SignIn() {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{
+                mt: 3,
+                mb: 2,
+                backgroundColor: defaultTheme.palette.warning.main,
+                "&:hover": {
+                  backgroundColor: "#ffb74d",
+                },
+              }}
             >
-              Log in
+              Log In
             </Button>
           </Box>
         </Box>
