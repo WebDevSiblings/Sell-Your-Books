@@ -1,7 +1,4 @@
-import { Routes, Route } from "react-router-dom";
-import Welcome from "./Welcome";
-import LoginPage from "./LoginPage";
-import SignupPage from "./SignupPage";
+import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 
 const Layout = () => {
@@ -9,11 +6,7 @@ const Layout = () => {
     <>
       <NavBar />
       <div id="main">
-        <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/signup" element={<SignupPage />} />
-        </Routes>
+        <Outlet />
       </div>
     </>
   );
