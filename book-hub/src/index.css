@@ -12,3 +12,18 @@
 .logo{
   border-radius: 10rem;
 }
+.container {
+  position: relative;
+  height: 105px;
+}
+
+.wavy-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  background: linear-gradient(180deg, #ffb74d, transparent);
+  transform: skewX(-20deg);
+  z-index: -1;
+}
