@@ -6,7 +6,6 @@ import VideoBackground from "./VideoBackground";
 const Welcome = () => {
   return (
     <>
-      <NavBar />
       <div style={{ position: "relative" }}>
         <VideoBackground />
         <div

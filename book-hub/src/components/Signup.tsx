@@ -14,7 +14,7 @@ export default function SignUp() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     console.log({
-      email: data.get("email"),
+      email: data.get("username"),
       password: data.get("password"),
     });
   };
@@ -44,10 +44,10 @@ export default function SignUp() {
               margin="normal"
               required
               fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
+              id="username"
+              label="Username"
+              name="username"
+              autoComplete="username"
               autoFocus
             />
             <TextField
@@ -64,7 +64,14 @@ export default function SignUp() {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{
+                mt: 3,
+                mb: 2,
+                backgroundColor: defaultTheme.palette.warning.main,
+                "&:hover": {
+                  backgroundColor: "#ffb74d",
+                },
+              }}
             >
               Sign Up
             </Button>

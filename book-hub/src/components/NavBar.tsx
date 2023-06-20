@@ -34,7 +34,6 @@ const NavBar = () => {
               </NavLink>
             </IconButton>
           </Box>
-
           <Box>
             <NavLink to="/login" className="navbar-brand">
               <Button color="inherit">Login</Button>
