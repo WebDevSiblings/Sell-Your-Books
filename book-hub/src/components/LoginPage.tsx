@@ -5,7 +5,6 @@ import WavyLine from "./WavyLine";
 const LoginPage = () => {
   return (
     <>
-      <NavBar />
       <WavyLine />
       <Login />
     </>
