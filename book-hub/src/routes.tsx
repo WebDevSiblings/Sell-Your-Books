@@ -3,6 +3,7 @@ import { default as SignupPage } from "./components/SignupPage";
 import { default as LoginPage } from "./components/LoginPage";
 import Welcome from "./components/Welcome";
 import Layout from "./components/Layout";
+import Choose from "./components/Choose";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
       { path: "", element: <Welcome /> },
       { path: "login", element: <LoginPage /> },
       { path: "signup", element: <SignupPage /> },
+      { path: "choose", element: <Choose /> },
     ],
   },
 ]);
