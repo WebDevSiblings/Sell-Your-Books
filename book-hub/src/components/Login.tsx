@@ -6,6 +6,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 
 const defaultTheme = createTheme();
 
@@ -60,21 +61,23 @@ export default function LogIn() {
               id="password"
               autoComplete="current-password"
             />
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{
-                mt: 3,
-                mb: 2,
-                backgroundColor: defaultTheme.palette.warning.main,
-                "&:hover": {
-                  backgroundColor: "#ffb74d",
-                },
-              }}
-            >
-              Log In
-            </Button>
+            <NavLink to="/choose">
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{
+                  mt: 3,
+                  mb: 2,
+                  backgroundColor: defaultTheme.palette.warning.main,
+                  "&:hover": {
+                    backgroundColor: "#ffb74d",
+                  },
+                }}
+              >
+                Log In
+              </Button>
+            </NavLink>
           </Box>
         </Box>
       </Container>

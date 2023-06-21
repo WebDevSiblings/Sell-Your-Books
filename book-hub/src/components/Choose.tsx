@@ -1,7 +1,7 @@
-import React from "react";
 import { Button, useTheme } from "@mui/material";
 import AnimatedText from "./AnimatedText";
 import WavyLine from "./WavyLine";
+import { NavLink } from "react-router-dom";
 
 const Choose = () => {
   const theme = useTheme();
@@ -29,20 +29,22 @@ const Choose = () => {
           <AnimatedText text="Where to next?" />
         </h1>
         <div className="choose" style={{ marginTop: "1rem" }}>
-          <Button
-            variant="contained"
-            size="large"
-            sx={{
-              backgroundColor: theme.palette.warning.main,
-              "&:hover": {
-                backgroundColor: "#ffb74d",
-              },
-              marginRight: "10rem",
-              padding: "2.5rem 5rem",
-            }}
-          >
-            Create
-          </Button>
+          <NavLink to="/create">
+            <Button
+              variant="contained"
+              size="large"
+              sx={{
+                backgroundColor: theme.palette.warning.main,
+                "&:hover": {
+                  backgroundColor: "#ffb74d",
+                },
+                marginRight: "10rem",
+                padding: "2.5rem 5rem",
+              }}
+            >
+              Create
+            </Button>
+          </NavLink>
           <Button
             variant="contained"
             size="large"

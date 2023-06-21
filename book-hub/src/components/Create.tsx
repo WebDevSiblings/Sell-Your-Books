@@ -19,7 +19,6 @@ export default function Create() {
       subject: data.get("subject"),
       grades: data.get("grades"),
       price: data.get("price"),
-      quantity: data.get("quantity"),
       description: data.get("description"),
     });
   };
@@ -85,16 +84,6 @@ export default function Create() {
                 label="Price"
                 name="price"
                 autoComplete="price"
-                autoFocus
-              />
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="quantity"
-                label="Quantity"
-                name="quantity"
-                autoComplete="quantity"
                 autoFocus
               />
               <TextField
