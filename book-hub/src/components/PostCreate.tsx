@@ -2,6 +2,7 @@ import React from "react";
 import { Button, useTheme } from "@mui/material";
 import AnimatedText from "./AnimatedText";
 import WavyLine from "./WavyLine";
+import { NavLink } from "react-router-dom";
 
 const PostCreate = () => {
   const theme = useTheme();
@@ -29,19 +30,21 @@ const PostCreate = () => {
         <AnimatedText text="Find it here!" />
       </h1>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <Button
-          variant="contained"
-          size="large"
-          sx={{
-            backgroundColor: theme.palette.warning.main,
-            "&:hover": {
-              backgroundColor: "#ffb74d",
-            },
-            padding: "2.5rem 5rem",
-          }}
-        >
-          Explore
-        </Button>
+        <NavLink to="/explore">
+          <Button
+            variant="contained"
+            size="large"
+            sx={{
+              backgroundColor: theme.palette.warning.main,
+              "&:hover": {
+                backgroundColor: "#ffb74d",
+              },
+              padding: "2.5rem 5rem",
+            }}
+          >
+            Explore
+          </Button>
+        </NavLink>
       </div>
     </div>
   );
