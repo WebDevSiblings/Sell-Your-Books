@@ -7,6 +7,7 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import WavyLine from "./WavyLine";
+import { NavLink } from "react-router-dom";
 
 const defaultTheme = createTheme();
 
@@ -96,21 +97,23 @@ export default function Create() {
                 autoComplete="description"
                 autoFocus
               />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{
-                  mt: 3,
-                  mb: 2,
-                  backgroundColor: defaultTheme.palette.warning.main,
-                  "&:hover": {
-                    backgroundColor: "#ffb74d",
-                  },
-                }}
-              >
-                Submit
-              </Button>
+              <NavLink to="post">
+                <Button
+                  type="submit"
+                  fullWidth
+                  variant="contained"
+                  sx={{
+                    mt: 3,
+                    mb: 2,
+                    backgroundColor: defaultTheme.palette.warning.main,
+                    "&:hover": {
+                      backgroundColor: "#ffb74d",
+                    },
+                  }}
+                >
+                  Submit
+                </Button>
+              </NavLink>
             </Box>
           </Box>
         </Container>
