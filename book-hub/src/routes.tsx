@@ -6,6 +6,7 @@ import Layout from "./components/Layout";
 import Choose from "./components/Choose";
 import Create from "./components/Create";
 import PostCreate from "./components/PostCreate";
+import { Explore } from "@mui/icons-material";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       { path: "choose", element: <Choose /> },
       { path: "create", element: <Create /> },
       { path: "create/post", element: <PostCreate /> },
+      { path: "explore", element: <Explore /> },
     ],
   },
 ]);
