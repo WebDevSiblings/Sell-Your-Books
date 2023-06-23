@@ -6,7 +6,7 @@ import Layout from "./components/Layout";
 import Choose from "./components/Choose";
 import Create from "./components/Create";
 import PostCreate from "./components/PostCreate";
-import CustomCard from "./components/CustomCard";
+import Explore from "./components/Explore";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       { path: "choose", element: <Choose /> },
       { path: "create", element: <Create /> },
       { path: "create/post", element: <PostCreate /> },
-      { path: "explore", element: <CustomCard /> },
+      { path: "explore", element: <Explore /> },
     ],
   },
 ]);
