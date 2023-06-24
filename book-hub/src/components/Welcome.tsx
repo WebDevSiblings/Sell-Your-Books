@@ -2,6 +2,7 @@ import AnimatedText from "./AnimatedText";
 import { Chart } from "./Chart";
 import NavBar from "./NavBar";
 import VideoBackground from "./VideoBackground";
+import Vote from "./Vote";
 
 const Welcome = () => {
   return (
@@ -29,6 +30,7 @@ const Welcome = () => {
             <AnimatedText text="Welcome!" />
           </h1>
           <Chart />
+          {/* <Vote /> */}
         </div>
       </div>
     </>
