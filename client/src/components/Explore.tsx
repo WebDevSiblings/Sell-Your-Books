@@ -6,9 +6,9 @@ import Typography from "@mui/material/Typography";
 
 interface Props {
   title: string;
-  subject: string | number;
-  grade: number | string;
-  price: number | string;
+  subject: string;
+  grade: number;
+  price: number;
   description: string;
 }
 
