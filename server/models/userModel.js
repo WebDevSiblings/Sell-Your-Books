@@ -11,4 +11,4 @@ const userSchema = new mongoose.Schema({
   description: { type: [String] },
 });
 
-module.exports = mongoose.model('userData', userSchema);
+module.exports = mongoose.model('userData10', userSchema);
